@@ -1,0 +1,271 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="ChallengeTile">
+    <Position X="20.25" Y="12.5" Width="2" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>QEQQAQQAECCIAIIAAACYAEBAAAEgAAAAAAABgEAAQAQ=</HashCode>
+      <FileName>Assets\Scripts\ChallengeTile.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="gameManager" />
+      <Field Name="menuManager" />
+      <Field Name="scoreManager" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="DiceRoll">
+    <Position X="11.25" Y="1.25" Width="1.75" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAUQQAAAACAAEAAAAABAAAAACEABAAgAIAACAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\DiceRoll.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="menuManager" />
+      <Field Name="myPlayer" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="GameManager">
+    <Position X="4.75" Y="3" Width="2" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>aDAYAkggICgpQACH4NgAJAAAAAMEIAE1oMAgUQAVoQE=</HashCode>
+      <FileName>Assets\Scripts\GameManager.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="menuManager" />
+      <Field Name="diceRoll" />
+      <Field Name="player" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="FloatScript">
+    <Position X="23.75" Y="1.5" Width="1.75" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAACAAAAECAAAAAAAAAgAAAAAACAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\FloatScript.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EmptyTile">
+    <Position X="23.75" Y="11" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAAQAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQA=</HashCode>
+      <FileName>Assets\Scripts\EmptyTile.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="menuManager" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="ItemTile">
+    <Position X="28" Y="10.25" Width="1.75" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAQQAAIAACAAAAQAAAAAAATIAAAEAAAAAAAAACAAAAA=</HashCode>
+      <FileName>Assets\Scripts\ItemTile.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="menuManager" />
+      <Field Name="diceRoll" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="MenuManager">
+    <Position X="17.25" Y="1" Width="2" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="true" />
+    </Compartments>
+    <AssociationLine Name="challengeTile" Type="ChallengeTile" ManuallyRouted="true">
+      <Path>
+        <Point X="19.125" Y="7.107" />
+        <Point X="19.125" Y="8.456" />
+        <Point X="19.905" Y="8.456" />
+        <Point X="19.905" Y="12.685" />
+        <Point X="20.25" Y="12.685" />
+      </Path>
+    </AssociationLine>
+    <AssociationLine Name="emptyTile" Type="EmptyTile" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="18.678" Y="7.107" />
+        <Point X="18.678" Y="7.098" />
+        <Point X="20.592" Y="7.098" Type="JumpStart" />
+        <Point X="20.759" Y="7.098" Type="JumpEnd" />
+        <Point X="24.312" Y="7.098" />
+        <Point X="24.312" Y="11" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>iFUgRAAABSJQAgAShhECFCDQABAFhig1gykGEglEwUE=</HashCode>
+      <FileName>Assets\Scripts\MenuManager.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="plusPoints" />
+      <Field Name="minusPoints" />
+      <Field Name="challengeTile" />
+      <Field Name="itemTile" />
+      <Field Name="emptyTile" />
+      <Field Name="player" />
+      <Field Name="diceRoll" />
+      <Field Name="scoreManager" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="MinusPoints">
+    <Position X="31.25" Y="6.25" Width="1.75" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AACQAAAAAAAAAAAAACAAAAAAAAAAAggAAAAAABAAQAA=</HashCode>
+      <FileName>Assets\Scripts\MinusPoints.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="menuManager" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Player">
+    <Position X="8.5" Y="8.25" Width="2" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>ICQRACAAAOCkJAAEACCAAo0EAAAEAUGkBTAAIERQEIw=</HashCode>
+      <FileName>Assets\Scripts\Player.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="manager" />
+      <Field Name="menuManager" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="PlayerFour">
+    <Position X="16.75" Y="12.25" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="true" />
+    </Compartments>
+    <AssociationLine Name="menuManager" Type="MenuManager" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="17.312" Y="12.25" />
+        <Point X="17.312" Y="12.069" />
+        <Point X="18.062" Y="12.069" />
+        <Point X="18.062" Y="7.107" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAQQAAAAACAAAAAEAAAIAAAIAAAAAAAAQAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\PlayerFour.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="menuManager" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="PlayerTwo">
+    <Position X="15" Y="12.75" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="true" />
+    </Compartments>
+    <AssociationLine Name="menuManager" Type="MenuManager" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="15.75" Y="12.75" />
+        <Point X="15.75" Y="12.107" />
+        <Point X="18.062" Y="12.107" />
+        <Point X="18.062" Y="7.107" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAQQAAAAACAAAAAEAAAIAAAIAAAAAAAAQAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\PlayerTwo.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="menuManager" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="PlayerThree">
+    <Position X="16.75" Y="14.5" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="true" />
+    </Compartments>
+    <AssociationLine Name="menuManager" Type="MenuManager" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="18.25" Y="15.438" />
+        <Point X="18.363" Y="15.438" />
+        <Point X="18.363" Y="12.121" />
+        <Point X="18.062" Y="12.121" />
+        <Point X="18.062" Y="7.107" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAQQAAAAACAAAAAEAAAIAAAIAAAAAAAAQAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\PlayerThree.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="menuManager" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="PlayerOne">
+    <Position X="15" Y="14.75" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="true" />
+    </Compartments>
+    <AssociationLine Name="menuManager" Type="MenuManager" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="16.5" Y="15.688" />
+        <Point X="16.649" Y="15.688" />
+        <Point X="16.649" Y="12.104" />
+        <Point X="18.062" Y="12.104" />
+        <Point X="18.062" Y="7.107" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAQQAAAAACAAAAAEAAAIAAAIAAAAAAAAQAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\PlayerOne.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="menuManager" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="PlusPoints">
+    <Position X="29.5" Y="2" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAAQAAAAAAAAAAAAEAAAAAAAAAAAAggAAAAAAAAAQAA=</HashCode>
+      <FileName>Assets\Scripts\PlusPoints.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="menuManager" />
+      <Field Name="scoreManager" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="ScoreManager">
+    <Position X="25.75" Y="12.25" Width="1.75" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AASAAIAIASQAAgACIAAIABAAAAAAAAABAAAAAhAIAgA=</HashCode>
+      <FileName>Assets\Scripts\ScoreManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WaterManager">
+    <Position X="21.75" Y="1.5" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAQBAAAAACAAAAQAAAAAAAAAAAAAAAAAAAAgAAAAgAA=</HashCode>
+      <FileName>Assets\Scripts\WaterManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
